@@ -8,13 +8,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RegisterUserActivity">
+        tools:context=".controller.RegisterUserCompanyActivity">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ic_logo"
             style="@style/Logo"
             android:contentDescription="@string/txt_description_image"
-            android:src="@mipmap/ic_icon"
+            android:src="@mipmap/ic_logo_round"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -39,13 +39,13 @@
             app:layout_constraintTop_toBottomOf="@+id/txt_title">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/input_register_username"
+                android:id="@+id/input_register_company_name"
                 style="@style/TextBox"
                 android:layout_margin="4dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="4dp"
-                android:hint="@string/hint_register_username"
+                android:hint="@string/hint_register_company_name"
                 app:endIconMode="clear_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -53,7 +53,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/txt_title">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_text_register_username"
+                    android:id="@+id/edit_text_register_company_name"
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:inputType="textNoSuggestions"
@@ -355,7 +355,7 @@
             style="@style/Button"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="16dp"
-            android:onClick="validateCNPJ"
+            android:onClick="registerUserCompany"
             android:text="@string/btn_register"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

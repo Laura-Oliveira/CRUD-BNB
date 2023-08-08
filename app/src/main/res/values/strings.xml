@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CRUD Banco do Nordeste</string>
+    <string name="app_name">Banco do Nordeste</string>
 
     <!-- ==================== activity_login ==================== -->
     <string name="txt_description_image"> Icon that represents the brand app</string>
@@ -24,12 +24,13 @@
     <string name="hint_register_uf"> UF </string>
 
     <!-- Pessoa Fisica -->
-    <string name="register_user_title">Cadastrar Pesssoa Física </string>
+    <string name="register_user_title">Cadastro Pesssoa Física </string>
     <string name="hint_register_username"> Nome</string>
     <string name="hint_register_cpf"> CPF</string>
 
     <!-- Pessoa Juridica -->
-    <string name="register_user_company_title"> Cadastrar Pessoa Jurídica</string>
+    <string name="register_user_company_title"> Cadastro Pessoa Jurídica</string>
+    <string name="hint_register_company_name"> Razão Social </string>
     <string name="hint_register_cnpj"> CNPJ </string>
 
     <!-- ==================== activity_register_service ==================== -->
