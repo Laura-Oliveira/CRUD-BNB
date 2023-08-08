@@ -1,4 +1,4 @@
-package com.app.crud;
+package com.app.crud.model;
 
 import java.util.InputMismatchException;
 
