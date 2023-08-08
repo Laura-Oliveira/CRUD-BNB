@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary"> #240464  </color>
+    <color name="colorPrimaryDark"> #8C7CAC </color>
+    <color name="colorAccent">#240464</color>
+    <color name="btn_color">  #7F6FA4 </color>
+    <color name="txt_color"> #FCFAFA </color>
+    <color name="white"> #FCFAFA </color>
+    <color name="black"> #424242</color>
+    <color name="title_main"> #263238</color>
+    <color name="color_background">  #424242  </color> <!-- #E0E0E0-->
+    <color name="background_textbox"> #EEEEEE</color>
+    <color name="background_splash"> #240464 </color>
+</resources>
+
