@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".view.ListUserDataActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_logo"
+            style="@style/Logo"
+            android:layout_marginTop="56dp"
+            android:contentDescription="@string/txt_description_image"
+            android:src="@mipmap/ic_logo_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title"
+            style="@style/TextViewTitle"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/profile_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_title_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="10sp"
+            android:singleLine="true"
+            android:text="@string/profile_title_user"
+            android:textAllCaps="true"
+            android:textColor="#EFEBE9"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Maria"
+            android:textAllCaps="true"
+            android:textColor="@color/color_background"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_title_user" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_user_cpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="098.098.899.34"
+            android:textAllCaps="true"
+            android:textColor="@color/color_background"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="82989900990"
+            android:textAllCaps="true"
+            android:textColor="@color/color_background"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_user_cpf" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="maria_3@gmail.com"
+            android:textAllCaps="true"
+            android:textColor="@color/color_background"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_user_phone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_title_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="10sp"
+            android:singleLine="true"
+            android:text="@string/profile_title_company"
+            android:textAllCaps="true"
+            android:textColor="#EFEBE9"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_user_email" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Banco do Nordeste"
+            android:textAllCaps="true"
+            android:textColor="@color/color_background"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_title_company" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_company_razao_social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="07.237.373/0001-20"
+            android:textAllCaps="true"
+            android:textColor="@color/color_background"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_company_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_company_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="30034545"
+            android:textAllCaps="true"
+            android:textColor="@color/color_background"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_company_razao_social" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_company_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="banco_nordeste@gmail.com"
+            android:textAllCaps="true"
+            android:textColor="@color/color_background"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_company_phone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.app.crud.R;
 import com.app.crud.model.CPFValidator;
 import com.app.crud.model.PessoaFisica;
+import com.app.crud.view.ListUserDataActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -109,7 +110,7 @@ public class RegisterUserActivity extends AppCompatActivity
         /* Data transfered from object to Firebase database */
         databaseReference.child(userApp.getId()).setValue(userApp);
 
-        Intent activity = new Intent(RegisterUserActivity.this, RegisterUserCompanyActivity.class);
+        Intent activity = new Intent(RegisterUserActivity.this, ListUserDataActivity.class);
         Toast.makeText(this,"Pessoa Física Cadastrada com Sucesso!",Toast.LENGTH_LONG).show();
         startActivity(activity);
     }

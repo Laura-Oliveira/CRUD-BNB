@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.app.crud.R;
 import com.app.crud.model.Company;
+import com.app.crud.view.ListUserDataActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -96,7 +97,7 @@ public class RegisterUserCompanyActivity extends AppCompatActivity
         /* Data transfered from object to Firebase database */
         databaseReference.child(companyUserApp.getId()).setValue(companyUserApp);
 
-        Intent activity = new Intent(RegisterUserCompanyActivity.this, RegisterUserCompanyActivity.class);
+        Intent activity = new Intent(RegisterUserCompanyActivity.this, ListUserDataActivity.class);
         Toast.makeText(this,"Pessoa Jurísica Cadastrada com Sucesso!",Toast.LENGTH_LONG).show();
         startActivity(activity);
     }

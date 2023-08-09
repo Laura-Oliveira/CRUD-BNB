@@ -60,34 +60,8 @@
     <string name="btn_register_service">Cadastrar</string>
 
     <!-- ==================== activity_profile ==================== -->
-    <string name="profile_title"> Profile </string>
-    <string name="profile_label_data"> Personal Data </string>
-    <string name="profile_label_service"> Services </string>
-    <string name="profile_label_type_contact"> Contract Type</string>
+    <string name="profile_title"> Dados </string>
+    <string name="profile_title_user"> Pessoa Física</string>
+    <string name="profile_title_company"> Pessoa Jurídica </string>
 
-
-    <!-- ==================== activity_learn_subject ==================== -->
-    <string name="learn_subject_title"> Conteúdo Gratuito </string>
-    <string name="link_marmitex">
-        <a href="https://www.mulheresempreendedoras.net.br/como-ganhar-dinheiro-vendendo-marmitex/">Como vender Marmitex?</a>
-    </string>
-    <string name="link_summer">
-        <a href="https://www.mulheresempreendedoras.net.br/ideias-para-ganhar-dinheiro-no-verao/">O que vender no verão?</a>
-    </string>
-
-    <string name="link_brigadeiro">
-        <a href="https://www.mulheresempreendedoras.net.br/como-ganhar-dinheiro-vendendo-brigadeiros/">Vender Brigadeiro</a>
-    </string>
-
-    <string name="link_easter">
-        <a href="https://www.mulheresempreendedoras.net.br/ideias-para-ganhar-dinheiro-na-pascoa/"> Como ganhar dinheiro na Páscoa?</a>
-    </string>
-
-    <string name="link_revenda_produtos">
-        <a href="https://www.mulheresempreendedoras.net.br/produtos-para-revenda-por-catalogo/">Como revender produtos?</a>
-    </string>
-
-    <string name="link_ideias_trabalho">
-        <a href="https://www.mulheresempreendedoras.net.br/ideias-para-trabalhar-em-casa/">Mais ideias para ganhar dinnheiro em casa</a>
-    </string>
 </resources>
