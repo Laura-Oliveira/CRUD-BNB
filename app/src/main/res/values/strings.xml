@@ -14,26 +14,26 @@
     <string name="btn_register_type_user_company">Pessoa Jurídica</string>
 
     <!-- ==================== activity_register_user ==================== -->
-    <string name="hint_register_email"> E-mail </string>
-    <string name="hint_register_phone"> Telefone </string>
-    <string name="hint_register_type_adress"> Tipo Endereço </string>
-    <string name="hint_register_adress"> Endereço </string>
+    <string name="hint_register_email"> E-mail* </string>
+    <string name="hint_register_phone"> Telefone* </string>
+    <string name="hint_register_type_adress"> Tipo Endereço* </string>
+    <string name="hint_register_adress"> Endereço* </string>
     <string name="hint_register_number"> Número </string>
     <string name="hint_register_extra_info"> Complemento </string>
-    <string name="hint_register_neighborhood"> Bairro </string>
-    <string name="hint_register_cep"> CEP </string>
-    <string name="hint_register_city"> Cidade </string>
-    <string name="hint_register_uf"> UF </string>
+    <string name="hint_register_neighborhood"> Bairro* </string>
+    <string name="hint_register_cep"> CEP* </string>
+    <string name="hint_register_city"> Cidade* </string>
+    <string name="hint_register_uf"> UF* </string>
 
     <!-- Pessoa Fisica -->
     <string name="register_user_title">Cadastro Pesssoa Física </string>
-    <string name="hint_register_username"> Nome</string>
-    <string name="hint_register_cpf"> CPF</string>
+    <string name="hint_register_username"> Nome*</string>
+    <string name="hint_register_cpf"> CPF*</string>
 
     <!-- Pessoa Juridica -->
     <string name="register_user_company_title"> Cadastro Pessoa Jurídica</string>
-    <string name="hint_register_company_name"> Razão Social </string>
-    <string name="hint_register_cnpj"> CNPJ </string>
+    <string name="hint_register_company_name"> Razão Social* </string>
+    <string name="hint_register_cnpj"> CNPJ* </string>
 
     <!-- ==================== activity_register_service ==================== -->
     <string name="register_service_title"> Cadastrar Serviço</string>

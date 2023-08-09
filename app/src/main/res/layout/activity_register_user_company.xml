@@ -82,7 +82,8 @@
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:inputType="phone|textNoSuggestions"
-                    android:maxLength="15"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="14"
                     android:maxLines="1"
                     android:textColorHint="#546E7A" />
 
@@ -128,7 +129,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="phone|textNoSuggestions"
-                android:maxLength="11"
+                app:counterEnabled="true"
+                app:counterMaxLength="11"
                 android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -159,6 +161,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:inputType="text|textNoSuggestions"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8"
                     android:maxLines="1"
                     android:textColorHint="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -295,6 +299,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:inputType="text|textNoSuggestions"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="5"
                     android:maxLines="1"
                     android:textColorHint="#000000" />
 
@@ -343,6 +349,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:inputType="text|textNoSuggestions"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="2"
                     android:maxLines="1"
                     android:textColorHint="#000000" />
             </com.google.android.material.textfield.TextInputLayout>

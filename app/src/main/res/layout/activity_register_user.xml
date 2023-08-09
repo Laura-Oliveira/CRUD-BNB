@@ -82,7 +82,8 @@
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:inputType="number|textNoSuggestions"
-                    android:maxLength="15"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="11"
                     android:maxLines="1"
                     android:textColorHint="#546E7A" />
 
@@ -128,7 +129,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="phone|textNoSuggestions"
-                android:maxLength="11"
+                app:counterEnabled="true"
+                app:counterMaxLength="11"
                 android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -159,6 +161,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:inputType="text|textNoSuggestions"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8"
                     android:maxLines="1"
                     android:textColorHint="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -295,6 +299,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:inputType="text|textNoSuggestions"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="5"
                     android:maxLines="1"
                     android:textColorHint="#000000" />
 
@@ -325,7 +331,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/input_register_uf"
+                android:id="@+id/input_register_extra_uf"
                 style="@style/TextBox"
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="4dp"
@@ -343,6 +349,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:inputType="text|textNoSuggestions"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="2"
                     android:maxLines="1"
                     android:textColorHint="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -354,15 +362,13 @@
             android:id="@+id/btn_register_user"
             style="@style/Button"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="24dp"
-            android:onClick="registerUser"
+            android:layout_marginTop="16dp"
+            android:onClick="registerUserCompany"
             android:text="@string/btn_register"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
