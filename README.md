@@ -26,7 +26,7 @@ Criar registros de usuários e empresas do Banco do Nordeste.
 <p align="center">
   <img src="./img/register_type_user.png" width="250" height="500"/>
   <img src="./img/register_user.png" width=250" height="500"/>
-  <img src="./img/register_company.png" width=250" height="500"/>
+  <img src="./img/_register_company.png" width=250" height="500"/>
   <img src="./img/list_data.png" width=250" height="500"/>
  </p>
 
