@@ -13,8 +13,8 @@ import com.app.crud.model.Company;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class RegisterUserCompanyActivity extends AppCompatActivity {
-
+public class RegisterUserCompanyActivity extends AppCompatActivity
+{
     /* Get firebase database instance */
     private DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 
@@ -28,7 +28,8 @@ public class RegisterUserCompanyActivity extends AppCompatActivity {
     private String txt_city, txt_typeAdress, txt_adress, txt_number, txt_extraInfo, txt_uf;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_user_company);
 
@@ -47,7 +48,6 @@ public class RegisterUserCompanyActivity extends AppCompatActivity {
     }
     public String validateCNPJ(String cnpj)
     {
-
         return cnpj;
     }
 
