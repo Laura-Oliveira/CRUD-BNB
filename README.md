@@ -24,8 +24,9 @@ Criar registros de usuários e empresas do Banco do Nordeste.
 
 ## Telas
 <p align="center">
-  <img src="./img/screen.png" width="250" height="500"/>
-<!--  <img src="./img/justa_logo.png" width=350" height="350"/> -->
+  <img src="./img/register_type_user.png" width="250" height="500"/>
+  <img src="./img/register_user.png" width=250" height="500"/>
+  <img src="./img/register_company.png" width=250" height="500"/>
  </p>
 
 <!-- Android App that's allow you to compare 2 list of strings and return the common strings between them -->
