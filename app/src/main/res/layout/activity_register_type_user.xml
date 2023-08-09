@@ -15,13 +15,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-  <!--  <com.google.android.material.textview.MaterialTextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txt_title"
         style="@style/TextViewTitle"
-        android:layout_marginTop="8dp"
-        android:text="@string/register_username_title"
+        android:layout_marginTop="24dp"
+        android:text="@string/txt_register_type_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ic_logo" /> -->
+        app:layout_constraintTop_toBottomOf="@+id/ic_logo" />
+
+    <!-- ========= BUTTON ========= -->
+
+    <!-- ========= BUTTON ========= -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_type_user"
+        style="@style/Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="140dp"
+        android:onClick="openRegisterUserPage"
+        android:text="@string/btn_register_type_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_type_user_company"
+        style="@style/Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:onClick="openRegisterCompanyPage"
+        android:text="@string/btn_register_type_user_company"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_type_user" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
