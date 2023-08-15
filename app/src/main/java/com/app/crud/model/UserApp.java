@@ -7,6 +7,34 @@ public class UserApp extends RealmObject
     @PrimaryKey
     private long id;
     private String name, email,  neigbornhood, city, typeAdress, adress, number, extraInfo, uf, phone, cep;
+    private String cpf;
+    private String cnpj;
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getRazaoSocial() {
+        return razaoSocial;
+    }
+
+    public void setRazaoSocial(String razaoSocial) {
+        this.razaoSocial = razaoSocial;
+    }
+
+    private String razaoSocial;
 
     public long getId() {
         return id;

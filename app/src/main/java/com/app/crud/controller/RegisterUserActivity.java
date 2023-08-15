@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.app.crud.R;
 import com.app.crud.model.CPFValidator;
-//import com.app.crud.model.PessoaFisica;
+import com.app.crud.model.PessoaFisica;
 import com.app.crud.model.UserApp;
 
 import io.realm.Realm;
@@ -38,11 +38,6 @@ public class RegisterUserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register_user);
         addDataBtn = findViewById(R.id.btn_register_user);
         realm = Realm.getDefaultInstance();
-
-        Number maxPrimaryKey = realm.where(UserApp.class).max("id");
-
-// Calculate the new primary key value
-        long nextPrimaryKey = (maxPrimaryKey != null) ? maxPrimaryKey.longValue() + 1 : 1;
 
         username = findViewById(R.id.edit_text_register_username);
         cpf = findViewById(R.id.edit_text_register_cpf);
@@ -79,7 +74,7 @@ public class RegisterUserActivity extends AppCompatActivity {
 
                 /*   Setting data into PessoaFIsica class */
                 userApp.setName(txt_username);
-                //userApp.setCpf(Integer.parseInt(txt_cpf));;
+                userApp.setCpf(txt_cpf);
                 userApp.setEmail(txt_email);
                 userApp.setPhone(txt_phone);
                 userApp.setCep(txt_cep);
@@ -93,7 +88,7 @@ public class RegisterUserActivity extends AppCompatActivity {
 
                 functionDataToDB(userApp);
                 // on below line displaying toast message as data has been added to database..
-                Toast.makeText(RegisterUserActivity.this, "Data has been added to database..", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(RegisterUserActivity.this, "Data has been added to database..", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(RegisterUserActivity.this, "NULL VALUE", Toast.LENGTH_SHORT).show();
             }
@@ -113,7 +108,9 @@ public class RegisterUserActivity extends AppCompatActivity {
         }
     }
 
-  /*  public void registerUser(View view)
+  /*  Save data with Firebase
+  public void registerUser(View view)
+
     {
         PessoaFisica userApp = new PessoaFisica();
         DatabaseReference databaseReferenceInstance = database.getRef();
@@ -164,24 +161,12 @@ public class RegisterUserActivity extends AppCompatActivity {
 
     } */
 
-    /*String name, String email,  String neigbornhood,
-    String city, String typeAdress, String adress, String number, String extraInfo, String uf,
-    String phone, String cep*/
-
     public void functionDataToDB(UserApp user) {
         // on below line creating and initializing our data object class
-        UserApp userApp = new UserApp();
+        PessoaFisica userApp = new PessoaFisica();
 
         // on below line we are calling a method to execute a transaction.
         realm.executeTransaction(realm -> {
-            // inside on execute method we are calling a method
-            // to copy to real m database from our modal class.
-            // realm.beginTransaction();
-            // realm.copyToRealm(userApp);
-            //Intent activity = new Intent(RegisterUserActivity.this, RegisterUserActivity.class);
-            //startActivity(activity);
-
-
             // Query the database to get the highest primary key value
             Number maxPrimaryKey = realm.where(UserApp.class).max("id");
 
