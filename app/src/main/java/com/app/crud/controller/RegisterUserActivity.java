@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.app.crud.R;
 import com.app.crud.model.CPFValidator;
+import com.app.crud.model.Company;
 import com.app.crud.model.PessoaFisica;
 import com.app.crud.model.UserApp;
 
@@ -30,13 +31,14 @@ public class RegisterUserActivity extends AppCompatActivity {
     private String txt_username, txt_cpf, txt_email, txt_phone, txt_cep, txt_neighborhood;
     private String txt_city, txt_typeAdress, txt_adress, txt_number, txt_extraInfo, txt_uf;
 
-    private Button addDataBtn;
+    private Button btnRegisterUser;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_user);
-        addDataBtn = findViewById(R.id.btn_register_user);
+        btnRegisterUser = findViewById(R.id.btn_register_user);
         realm = Realm.getDefaultInstance();
 
         username = findViewById(R.id.edit_text_register_username);
@@ -66,7 +68,7 @@ public class RegisterUserActivity extends AppCompatActivity {
         txt_extraInfo = extraInfo.getText().toString();
         txt_uf = uf.getText().toString();
 
-        addDataBtn.setOnClickListener(v -> {
+        btnRegisterUser.setOnClickListener(v -> {
             // on below line validating if name and age is empty or not.
             if (!(username.getText().toString().isEmpty()))
             {
@@ -86,7 +88,7 @@ public class RegisterUserActivity extends AppCompatActivity {
                 userApp.setEmail(txt_extraInfo);
                 userApp.setUf(txt_uf);
 
-                functionDataToDB(userApp);
+                functionRegisterUser(userApp);
                 // on below line displaying toast message as data has been added to database..
                // Toast.makeText(RegisterUserActivity.this, "Data has been added to database..", Toast.LENGTH_SHORT).show();
             } else {
@@ -161,7 +163,10 @@ public class RegisterUserActivity extends AppCompatActivity {
 
     } */
 
-    public void functionDataToDB(UserApp user) {
+    /*
+    Cadastro Pessoa Fisica
+     */
+    public void functionRegisterUser(UserApp user) {
         // on below line creating and initializing our data object class
         PessoaFisica userApp = new PessoaFisica();
 
