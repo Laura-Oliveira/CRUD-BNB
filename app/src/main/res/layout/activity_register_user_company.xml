@@ -56,7 +56,7 @@
                     android:id="@+id/edit_text_register_company_name"
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
-                    android:inputType="textNoSuggestions"
+                    android:inputType="number|textNoSuggestions"
                     android:maxLength="15"
                     android:maxLines="1"
                     android:textColorHint="#546E7A" />
@@ -79,7 +79,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_cnpj"
-                    android:layout_width="200dp"
+                    android:layout_width="143dp"
                     android:layout_height="match_parent"
                     android:inputType="phone|textNoSuggestions"
                     app:counterEnabled="true"
@@ -160,7 +160,7 @@
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:inputType="text|textNoSuggestions"
+                    android:inputType="number|textNoSuggestions"
                     app:counterEnabled="true"
                     app:counterMaxLength="8"
                     android:maxLines="1"
@@ -201,7 +201,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_city"
-                    android:layout_width="150dp"
+                    android:layout_width="105dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
@@ -236,7 +236,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_type_adress"
-                    android:layout_width="180dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
@@ -259,7 +259,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_adress"
-                    android:layout_width="213dp"
+                    android:layout_width="210dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
@@ -298,7 +298,7 @@
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:inputType="text|textNoSuggestions"
+                    android:inputType="number|textNoSuggestions"
                     app:counterEnabled="true"
                     app:counterMaxLength="5"
                     android:maxLines="1"
@@ -321,7 +321,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_extra_info"
-                    android:layout_width="200dp"
+                    android:layout_width="170dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
@@ -344,7 +344,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_uf"
-                    android:layout_width="200dp"
+                    android:layout_width="60dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
@@ -363,7 +363,6 @@
             style="@style/Button"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="16dp"
-            android:onClick="registerUserCompany"
             android:text="@string/btn_register"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

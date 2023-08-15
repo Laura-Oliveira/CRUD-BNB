@@ -25,7 +25,7 @@ public class RegisterTypeUserActivity extends AppCompatActivity
 
     public void openRegisterCompanyPage(View view)
     {
-        //Intent intent = new Intent(this, RegisterUserCompanyActivity.class);
-     //   startActivity(intent);
+        Intent intent = new Intent(this, RegisterUserCompanyActivity.class);
+        startActivity(intent);
     }
 }
