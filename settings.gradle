@@ -1,8 +1,11 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven { url "https://realm.bintray.com/realm" }
     }
 }
 dependencyResolutionManagement {
@@ -10,6 +13,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://realm.bintray.com/realm" }
     }
 }
 rootProject.name = "CRUD BNB"

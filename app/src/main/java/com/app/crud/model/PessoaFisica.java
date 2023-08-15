@@ -1,5 +1,7 @@
 package com.app.crud.model;
 
+import io.realm.RealmObject;
+/*
 public class PessoaFisica extends UserApp
 {
     private String id;
@@ -32,4 +34,4 @@ public class PessoaFisica extends UserApp
 
     private String username;
     private int cpf;
-}
+} */

@@ -1,7 +1,12 @@
 plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
+   // id 'realm-android' version '10.3.1'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.kapt'
 }
+
+apply plugin: "realm-android"
 
 android {
     namespace 'com.app.crud'
@@ -27,6 +32,14 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    realm {
+        syncEnabled = true
+    }
 }
 
 dependencies {
@@ -47,4 +60,11 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.code.gson:gson:2.8.9'
     testImplementation 'junit:junit:4.13.2'
+
+    /* Dependencies Realm DB */
+  //  classpath "com.android.tools.build:gradle:7.0.0" // Example Android Gradle Plugin version
+   // classpath "io.realm:realm-gradle-plugin:10.3.1"
+    implementation 'io.realm:realm-gradle-plugin:10.10.1'
+
+
 }

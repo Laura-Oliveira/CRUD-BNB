@@ -9,14 +9,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.app.crud.R;
-import com.app.crud.model.Company;
+//import com.app.crud.model.Company;
 import com.app.crud.view.ListUserDataActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class RegisterUserCompanyActivity extends AppCompatActivity
+/*public class RegisterUserCompanyActivity extends AppCompatActivity
 {
-    /* Get firebase database instance */
+    /* Get firebase database instance
     private DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 
     //Data User Company
@@ -58,7 +58,7 @@ public class RegisterUserCompanyActivity extends AppCompatActivity
         DatabaseReference databaseReferenceInstance = database.getRef();
         DatabaseReference databaseReference = databaseReferenceInstance.child("user");
 
-        /* Converting EditText type into String type */
+        /* Converting EditText type into String type
         txt_razaoSocial = razaoSocial.getText().toString();
         txt_cpnj = cnpj.getText().toString();
         txt_email = email.getText().toString();
@@ -74,27 +74,27 @@ public class RegisterUserCompanyActivity extends AppCompatActivity
 
         validateCNPJ(txt_cpnj);
 
-        /* Select the database instance child user */
+        /* Select the database instance child user
         databaseReference = database.getDatabase().getReference("company");
 
-        /* Setting data into PessoaFIsica class */
+        /* Setting data into PessoaFIsica class
         companyUserApp.setRazaoSocial(txt_razaoSocial);
         companyUserApp.setCnpj(Integer.parseInt(txt_cpnj));
         companyUserApp.setEmail(txt_email);
-        companyUserApp.setPhone(Integer.parseInt(txt_phone));
-        companyUserApp.setCep(Integer.parseInt(txt_cep));
+        companyUserApp.setPhone(txt_phone);
+        companyUserApp.setCep(txt_cep);
         companyUserApp.setNeigbornhood(txt_neighborhood);
         companyUserApp.setCity(txt_city);
         companyUserApp.setTypeAdress(txt_typeAdress);
         companyUserApp.setAdress(txt_adress);
-        companyUserApp.setNumber(Integer.parseInt(txt_number));
+        companyUserApp.setNumber(txt_number);
         companyUserApp.setEmail(txt_extraInfo);
         companyUserApp.setUf(txt_uf);
 
-        /* Transfering data into Firebase object reference */
+        /* Transfering data into Firebase object reference
         companyUserApp.setId(databaseReference.push().getKey());
 
-        /* Data transfered from object to Firebase database */
+        /* Data transfered from object to Firebase database
         databaseReference.child(companyUserApp.getId()).setValue(companyUserApp);
 
         Intent activity = new Intent(RegisterUserCompanyActivity.this, ListUserDataActivity.class);
@@ -102,3 +102,4 @@ public class RegisterUserCompanyActivity extends AppCompatActivity
         startActivity(activity);
     }
 }
+*/

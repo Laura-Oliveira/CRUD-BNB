@@ -79,13 +79,13 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_cpf"
-                    android:layout_width="200dp"
+                    android:layout_width="143dp"
                     android:layout_height="match_parent"
                     android:inputType="number|textNoSuggestions"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="11"
                     android:maxLines="1"
-                    android:textColorHint="#546E7A" />
+                    android:textColorHint="#546E7A"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="11" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -201,7 +201,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_city"
-                    android:layout_width="150dp"
+                    android:layout_width="105dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
@@ -236,7 +236,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_type_adress"
-                    android:layout_width="180dp"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
@@ -259,7 +259,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_adress"
-                    android:layout_width="213dp"
+                    android:layout_width="210dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
@@ -321,7 +321,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_extra_info"
-                    android:layout_width="200dp"
+                    android:layout_width="170dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
@@ -344,15 +344,15 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_register_uf"
-                    android:layout_width="200dp"
+                    android:layout_width="60dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:inputType="text|textNoSuggestions"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="2"
                     android:maxLines="1"
-                    android:textColorHint="#000000" />
+                    android:textColorHint="#000000"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="2" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -363,7 +363,6 @@
             style="@style/Button"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="16dp"
-            android:onClick="registerUserCompany"
             android:text="@string/btn_register"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

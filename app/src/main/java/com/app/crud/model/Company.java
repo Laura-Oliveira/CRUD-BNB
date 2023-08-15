@@ -1,5 +1,6 @@
 package com.app.crud.model;
 
+/*
 public class Company extends UserApp
 {
     private String id;
@@ -31,3 +32,4 @@ public class Company extends UserApp
     private String razaoSocial;
     private int cnpj;
 }
+*/

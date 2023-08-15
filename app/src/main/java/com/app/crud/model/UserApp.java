@@ -1,17 +1,18 @@
 package com.app.crud.model;
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
-public class UserApp
+public class UserApp extends RealmObject
 {
-    private String id;
-    private String name, email,  neigbornhood, city, typeAdress, adress, extraInfo, uf;
-    private int phone;
-    private int cep;
+    @PrimaryKey
+    private long id;
+    private String name, email,  neigbornhood, city, typeAdress, adress, number, extraInfo, uf, phone, cep;
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -79,36 +80,32 @@ public class UserApp
         this.uf = uf;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
-    public int getCep() {
+    public String getCep() {
         return cep;
     }
 
-    public void setCep(int cep) {
+    public void setCep(String cep) {
         this.cep = cep;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
-
-    private int number;
 
     public UserApp()
     {
     }
-
-
 }
 

@@ -18,7 +18,9 @@
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txt_title"
         style="@style/TextViewTitle"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/txt_register_type_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
