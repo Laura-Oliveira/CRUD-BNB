@@ -1,6 +1,6 @@
 # CRUD-BNB APP
 
-CRUD-BNB é um **aplicativo Android** focado em **criar registros de usuários e empresas do Banco do Nordeste**.
+CRUD-BNB é um **Aplicativo Android** focado em **criar registros de usuários e empresas do Banco do Nordeste**.
 
 O aplicativo permite que você **crie e liste registros de 2 tipos de usuários:**
 * Pessoa Física;
