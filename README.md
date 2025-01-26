@@ -30,9 +30,5 @@ Criar registros de usuários e empresas do Banco do Nordeste.
   <img src="./img/list_data.png" width=250" height="500"/>
  </p>
 
-
-
-
-
 <!-- Android App that's allow you to compare 2 list of strings and return the common strings between them -->
 
